@@ -8,18 +8,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpPower;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
-    /*[SerializeField] private float ClimbSpeed = 3f;*/
+    [SerializeField] private float ClimbSpeed = 3f;
 
-    /*bool climbing;
+    bool climbing;
 
     Vector2 wallPoint;
-    Vector2 wallNormal;*/
+    Vector2 wallNormal;
 
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D boxCollider;
     private float wallJumpCooldown;
     private float horizontalInput;
+    private float verticalInput;
 
 
     private void Awake()
@@ -38,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
 
         //Flips player when they move left or right
@@ -51,45 +53,26 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("Run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded());
 
-        // Wall Jump Logic
-        if (wallJumpCooldown > 0.2f)
+        body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+
+        if (onWall() && !isGrounded())
         {
-
-
-            body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
-
-            if (onWall() && !isGrounded())
-            {
-                body.gravityScale = 0;
-                body.velocity = Vector2.zero;
-            }
-            else
-                body.gravityScale = 7;
-
-            if (Input.GetKey(KeyCode.UpArrow))
-                Jump();
+            body.gravityScale = 1;
+            body.velocity = Vector2.zero;
         }
         else
-            wallJumpCooldown += Time.deltaTime;
-
-        /*if (NearWall())
         {
-            if (FacingWall())
-            {
-                // is player presses the climb button
-                if (Input.GetKeyUp(KeyCode.W))
-                {
-                    climbing = !climbing;
-                }
-            }
-            else
-            {
-                Jump();
-            }
-        }*/
+            body.gravityScale = 5;
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            Jump();
+        }
+
     }
 
-    /*bool NearWall()
+    bool NearWall()
     {
         return Physics.CheckSphere(transform.position, 3f, wallLayer);
     }
@@ -103,9 +86,9 @@ public class PlayerMovement : MonoBehaviour
         wallPoint = hit.point;
         wallNormal = hit.normal;
         return facingWall;
-    }*/
+    }
 
-    /*private void Run()
+    private void Run()
     {
         body.gravityScale = 0;
 
@@ -114,9 +97,9 @@ public class PlayerMovement : MonoBehaviour
         var move = transform.forward * v + transform.right * h;
 
         ApplyMove(move, speed);
-    }*/
+    }
 
-    /*private void ClimbWall()
+    private void ClimbWall()
     {
         body.gravityScale = 0;
 
@@ -127,9 +110,9 @@ public class PlayerMovement : MonoBehaviour
         var move = transform.up * v + transform.right * h;
 
         ApplyMove(move, ClimbSpeed);
-    }*/
+    }
 
-    /*void GrabWall()
+    void GrabWall()
     {
         var newPosition = wallPoint + wallNormal * (boxCollider.edgeRadius - 0.1f);
         transform.position = Vector2.Lerp(transform.position, newPosition, Time.deltaTime);
@@ -138,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
             return;
 
         transform.rotation = Quaternion.LookRotation(-wallNormal);
-    }*/
+    }
 
     private void Jump()
     {
@@ -149,15 +132,17 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (onWall() && !isGrounded())
         {
-            if (horizontalInput == 0)
+            if (verticalInput == 5)
             {
                 //This pushes player off the wall
                 body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 30, 0);
                 transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             else
+            {
                 body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 30, 30);
-            wallJumpCooldown = 0;
+                wallJumpCooldown = 0;
+            }
 
             // The line (84) above controls the force of the player jumping off the the wall the fist number is the force of which the player would be pushed away from the wall. And the second one if the force pushing the player up
 
@@ -166,15 +151,10 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    /*private void ApplyMove(Vector2 move, float speed)
+    private void ApplyMove(Vector2 move, float speed)
     {
         body.MovePosition(new Vector2(transform.position.x, transform.position.y) + move * speed * Time.deltaTime);
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-
-    }*/
 
     private bool isGrounded()
     {
