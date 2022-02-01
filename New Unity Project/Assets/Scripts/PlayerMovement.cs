@@ -42,26 +42,36 @@ public class PlayerMovement : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
 
-        //Flips player when they move left or right
-        if (horizontalInput > 0.01f)
-            transform.localScale = Vector3.one;
-        else if (horizontalInput < -0.01f)
-            transform.localScale = new Vector3(-1, 1, 1);
-
-
         //Set animator parameters
         anim.SetBool("Run", horizontalInput != 0);
-        anim.SetBool("grounded", isGrounded());
+        anim.SetBool("grounded", isgrounded());
 
-        body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+        
 
-        if (onWall() && !isGrounded())
+        if (onwall() && !isgrounded())
         {
+            Debug.Log(verticalInput * speed);
+
+            //body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+            body.velocity = new Vector2(body.velocity.x, verticalInput * speed);
+
             body.gravityScale = 1;
             body.velocity = Vector2.zero;
         }
         else
         {
+            //Flips player when they move left or right
+            if (horizontalInput > 0.01f)
+            {
+                transform.localScale = Vector3.one;
+            }
+            else if (horizontalInput < -0.01f)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+
+            body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+
             body.gravityScale = 5;
         }
 
@@ -94,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
 
         var v = Input.GetAxis("Vertical");
         var h = Input.GetAxis("Horizontal");
-        var move = transform.forward * v + transform.right * h;
+        var move = (transform.forward * v) + (transform.right * h);
 
         ApplyMove(move, speed);
     }
@@ -107,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
 
         var v = Input.GetAxis("Vertical");
         var h = Input.GetAxis("Horizontal");
-        var move = transform.up * v + transform.right * h;
+        var move = (transform.up * v) + (transform.right * h);
 
         ApplyMove(move, ClimbSpeed);
     }
@@ -125,12 +135,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        if (isGrounded())
+        if (isgrounded())
         {
             body.velocity = new Vector2(body.velocity.x, jumpPower);
             anim.SetTrigger("jump");
         }
-        else if (onWall() && !isGrounded())
+        else if (onwall() && !isgrounded())
         {
             if (verticalInput == 5)
             {
@@ -156,14 +166,14 @@ public class PlayerMovement : MonoBehaviour
         body.MovePosition(new Vector2(transform.position.x, transform.position.y) + move * speed * Time.deltaTime);
     }
 
-    private bool isGrounded()
+    private bool isgrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
         return raycastHit.collider != null;
 
     }
 
-    private bool onWall()
+    private bool onwall()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
         return raycastHit.collider != null;
