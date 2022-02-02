@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
             body.velocity = new Vector2(body.velocity.x, verticalInput * speed);
 
             body.gravityScale = 1;
-            body.velocity = Vector2.zero;
+            //body.velocity = Vector2.zero;
         }
         else
         {
@@ -145,12 +145,12 @@ public class PlayerMovement : MonoBehaviour
             if (verticalInput == 5)
             {
                 //This pushes player off the wall
-                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 30, 0);
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * jumpPower, 0);
                 transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             else
             {
-                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 30, 30);
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * jumpPower, jumpPower);
                 wallJumpCooldown = 0;
             }
 
