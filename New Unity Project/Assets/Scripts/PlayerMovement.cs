@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private float ClimbSpeed = 3f;
-
+    public GameObject[] players;
     bool climbing;
 
     Vector2 wallPoint;
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
@@ -159,6 +159,23 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        FindStartPos();
+
+        players = GameObject.FindGameObjectsWithTag("Player");
+
+        if(players.Length > 1)
+        {
+            Destroy(players[1]);
+        }
+    }
+    
+    void FindStartPos()
+    {
+        transform.position = GameObject.FindWithTag("StartPos").transform.position;
     }
 
     private void ApplyMove(Vector2 move, float speed)
