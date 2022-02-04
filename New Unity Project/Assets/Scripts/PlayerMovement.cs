@@ -43,8 +43,9 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
 
         //Set animator parameters
-        anim.SetBool("Run", horizontalInput != 0);
+        anim.SetBool("Run", horizontalInput != 0 && !onwall() && isgrounded());
         anim.SetBool("grounded", isgrounded());
+        anim.SetBool("onWall", onwall());
 
         
 
@@ -194,6 +195,5 @@ public class PlayerMovement : MonoBehaviour
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
         return raycastHit.collider != null;
-
     }
 }
