@@ -125,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
 
     void GrabWall()
     {
-        var newPosition = wallPoint + wallNormal * (boxCollider.edgeRadius - 0.1f);
+        var newPosition = wallPoint + wallNormal;
         transform.position = Vector2.Lerp(transform.position, newPosition, Time.deltaTime);
 
         if (wallNormal == Vector2.zero)
