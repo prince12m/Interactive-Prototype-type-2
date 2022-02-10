@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/pmalonga2021/Documents Lvl game/New Unity Project
+C:/Users/aghani2021/Documents/GitHub/Interactive-Prototype-type-2/New Unity Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50230
-Successfully changed project path to: C:/Users/pmalonga2021/Documents Lvl game/New Unity Project
-C:/Users/pmalonga2021/Documents Lvl game/New Unity Project
+50056
+Successfully changed project path to: C:/Users/aghani2021/Documents/GitHub/Interactive-Prototype-type-2/New Unity Project
+C:/Users/aghani2021/Documents/GitHub/Interactive-Prototype-type-2/New Unity Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 31.83 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 31.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.23f1 (c5d91304a876)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/pmalonga2021/Documents Lvl game/New Unity Project/Assets
+[Subsystems] Discovering subsystems at path C:/Users/aghani2021/Documents/GitHub/Interactive-Prototype-type-2/New Unity Project/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,37 +35,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000945 seconds.
+Registered in 0.001101 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 30.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 30.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.368 seconds
+- Completed reload, in  0.359 seconds
 Domain Reload Profiling:
-	ReloadAssembly (368ms)
-		BeginReloadAssembly (35ms)
+	ReloadAssembly (360ms)
+		BeginReloadAssembly (33ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (287ms)
-			LoadAssemblies (34ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (281ms)
+			LoadAssemblies (32ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (88ms)
+			SetupTypeCache (90ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (120ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (112ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (31ms)
-				BeforeProcessingInitializeOnLoad (11ms)
-				ProcessInitializeOnLoadAttributes (57ms)
+				RefreshPlugins (30ms)
+				BeforeProcessingInitializeOnLoad (5ms)
+				ProcessInitializeOnLoadAttributes (55ms)
 				ProcessInitializeOnLoadMethodAttributes (18ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -73,37 +73,37 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002749 seconds.
+Registered in 0.002733 seconds.
 Begin MonoManager ReloadAssembly
 OnLevelWasLoaded was found on PlayerMovement
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 29.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 31.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.686 seconds
+- Completed reload, in  0.680 seconds
 Domain Reload Profiling:
-	ReloadAssembly (686ms)
+	ReloadAssembly (680ms)
 		BeginReloadAssembly (87ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (12ms)
-		EndReloadAssembly (561ms)
-			LoadAssemblies (56ms)
+		EndReloadAssembly (555ms)
+			LoadAssemblies (55ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (177ms)
+			SetupTypeCache (175ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (228ms)
+			SetupLoadedEditorAssemblies (223ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (30ms)
-				BeforeProcessingInitializeOnLoad (55ms)
-				ProcessInitializeOnLoadAttributes (128ms)
+				RefreshPlugins (31ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (129ms)
 				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
@@ -113,35 +113,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2196 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.9 MB.
-System memory in use after: 96.0 MB.
+System memory in use before: 96.7 MB.
+System memory in use after: 96.8 MB.
 
 Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2630.
-Total: 2.378200 ms (FindLiveObjects: 0.147400 ms CreateObjectMapping: 0.050500 ms MarkObjects: 2.131600 ms  DeleteObjects: 0.047800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 2.44 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 52.2 MB.
-System memory in use after: 52.3 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2630.
-Total: 2.388700 ms (FindLiveObjects: 0.160700 ms CreateObjectMapping: 0.039800 ms MarkObjects: 2.177500 ms  DeleteObjects: 0.010100 ms)
+Total: 2.357300 ms (FindLiveObjects: 0.155300 ms CreateObjectMapping: 0.053300 ms MarkObjects: 2.099600 ms  DeleteObjects: 0.048400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -155,42 +134,50 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Levels/Level1.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Levels/Level1.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '384a53586ca681355f75a24cc2914c0d') in 0.011418 seconds 
-  Import took 0.014093 seconds .
+  path: Assets/Levels/LibarianLevel.unity
+  artifactKey: Guid(80d81a7631f4e324290130dcb24b30ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Levels/LibarianLevel.unity using Guid(80d81a7631f4e324290130dcb24b30ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362151278ee237b9c30d56a81cbb3dad') in 0.012116 seconds 
+  Import took 0.014535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.626170 seconds.
+  path: Assets/Levels/Tutorial Lvl.unity
+  artifactKey: Guid(92132fa580607334694f8ba3466de633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Levels/Tutorial Lvl.unity using Guid(92132fa580607334694f8ba3466de633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71939dd787f86f3aed0a55afab30f197') in 0.004869 seconds 
+  Import took 0.007153 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002402 seconds.
+Registered in 0.002380 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.604 seconds
+- Completed reload, in  0.626 seconds
 Domain Reload Profiling:
-	ReloadAssembly (604ms)
-		BeginReloadAssembly (73ms)
+	ReloadAssembly (627ms)
+		BeginReloadAssembly (87ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (493ms)
-			LoadAssemblies (55ms)
+		EndReloadAssembly (501ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (165ms)
+			SetupTypeCache (177ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (189ms)
+			SetupLoadedEditorAssemblies (182ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (122ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (128ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
@@ -200,14 +187,14 @@ Platform modules already initialized, skipping
 OnLevelWasLoaded was found on PlayerMovement
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Refreshing native plugins compatible for Editor in 0.33 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2185 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.3 MB.
-System memory in use after: 95.4 MB.
+System memory in use before: 96.1 MB.
+System memory in use after: 96.2 MB.
 
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2632.
-Total: 2.291300 ms (FindLiveObjects: 0.114700 ms CreateObjectMapping: 0.049500 ms MarkObjects: 2.112000 ms  DeleteObjects: 0.014400 ms)
+Total: 2.381400 ms (FindLiveObjects: 0.148300 ms CreateObjectMapping: 0.052700 ms MarkObjects: 2.166000 ms  DeleteObjects: 0.013700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -219,76 +206,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 94.304445 seconds.
-  path: Assets/Levels/LibarianLevel.unity
-  artifactKey: Guid(80d81a7631f4e324290130dcb24b30ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Levels/LibarianLevel.unity using Guid(80d81a7631f4e324290130dcb24b30ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272b6abe10de62361443b2d1f180bece') in 0.011265 seconds 
-  Import took 0.013288 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.197794 seconds.
-  path: Assets/Levels/Level4.unity
-  artifactKey: Guid(8cea17b67a3f6544c832f5790cddc913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Levels/Level4.unity using Guid(8cea17b67a3f6544c832f5790cddc913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010fcc603fc4c3dfa5eb91af6a2350f0') in 0.004678 seconds 
-  Import took 0.007183 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.521442 seconds.
-  path: Assets/Levels/Level3.unity
-  artifactKey: Guid(33a397adc6bd98e449cc2f47aa996404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Levels/Level3.unity using Guid(33a397adc6bd98e449cc2f47aa996404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa82dd94e0e478d4d49d2716be24dad') in 0.004901 seconds 
-  Import took 0.007507 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.176714 seconds.
-  path: Assets/Levels/LibarianLevel.unity
-  artifactKey: Guid(80d81a7631f4e324290130dcb24b30ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Levels/LibarianLevel.unity using Guid(80d81a7631f4e324290130dcb24b30ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee1dce500ff1c846ff06ff508457cd2') in 0.001510 seconds 
-  Import took 0.003827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 39.371989 seconds.
-  path: Assets/Levels/LibarianLevel.unity
-  artifactKey: Guid(80d81a7631f4e324290130dcb24b30ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Levels/LibarianLevel.unity using Guid(80d81a7631f4e324290130dcb24b30ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b83fb7ee459b150d3a7e48e01524d944') in 0.001578 seconds 
-  Import took 0.004252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 212.171268 seconds.
-  path: Assets/Levels/Level2.unity
-  artifactKey: Guid(cc39cbffec7512a4e8068819c0ea2668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Levels/Level2.unity using Guid(cc39cbffec7512a4e8068819c0ea2668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4cf3648c3bc0e52420b99eefc61f300') in 0.004754 seconds 
-  Import took 0.007228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.584728 seconds.
-  path: Assets/Levels/LibarianLevel.unity
-  artifactKey: Guid(80d81a7631f4e324290130dcb24b30ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Levels/LibarianLevel.unity using Guid(80d81a7631f4e324290130dcb24b30ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3baf877081f170f1987115b76cffd612') in 0.002644 seconds 
-  Import took 0.005223 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.305474 seconds.
-  path: Assets/Levels/Tutorial Lvl.unity
-  artifactKey: Guid(92132fa580607334694f8ba3466de633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Levels/Tutorial Lvl.unity using Guid(92132fa580607334694f8ba3466de633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e82977caa981fb0465f4767dcc367fc') in 0.004707 seconds 
-  Import took 0.007174 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 176.329933 seconds.
-  path: Assets/Levels/Tutorial Lvl.unity
-  artifactKey: Guid(92132fa580607334694f8ba3466de633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Levels/Tutorial Lvl.unity using Guid(92132fa580607334694f8ba3466de633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54f9549f54863732abdee9a36d8c0700') in 0.001590 seconds 
-  Import took 0.004020 seconds .
-
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
