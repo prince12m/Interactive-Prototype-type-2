@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Levels/Tutorial Lvl.unity
+    guid: 92132fa580607334694f8ba3466de633
+  - enabled: 1
     path: Assets/Levels/Level1 1.unity
     guid: 33cee2590fb316243aa7ba223042d5e5
   - enabled: 1
@@ -17,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Level4.unity
     guid: 8cea17b67a3f6544c832f5790cddc913
-  - enabled: 1
-    path: Assets/Levels/Tutorial Lvl.unity
-    guid: 92132fa580607334694f8ba3466de633
   - enabled: 1
     path: Assets/Levels/LibarianLevel.unity
     guid: 80d81a7631f4e324290130dcb24b30ff
