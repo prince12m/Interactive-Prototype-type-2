@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Levels/Tutorial Lvl.unity
+- path: Assets/Levels/LibarianLevel.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
