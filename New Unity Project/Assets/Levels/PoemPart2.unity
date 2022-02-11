@@ -500,8 +500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4fb862825ef0aa4da81f953c6a81c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iLevelToLoad: 2
-  sLevelToLoad: Level2
+  iLevelToLoad: 3
+  sLevelToLoad: PoemPart3
   useIntegerToLoadLevel: 1
 --- !u!61 &626882405
 BoxCollider2D:
@@ -937,8 +937,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'A globe that defines oxymoron, gods globe.
 
-    All is dark yet, the
-    sky is filled with beautiful creativity.
+    All is dark yet, the sky
+    is filled with beautiful creativity.
 
 '
 --- !u!222 &1021071715

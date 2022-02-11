@@ -565,8 +565,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4fb862825ef0aa4da81f953c6a81c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iLevelToLoad: 0
-  sLevelToLoad: 
+  iLevelToLoad: 7
+  sLevelToLoad: TempPoemSceneForLibrarianLevel
   useIntegerToLoadLevel: 1
 --- !u!61 &207956480
 BoxCollider2D:
@@ -653,7 +653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207956478}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.5, y: -5.1, z: 0}
+  m_LocalPosition: {x: 16.2, y: -11.7, z: 0}
   m_LocalScale: {x: 1.0265973, y: 1.5666186, z: 5.8609}
   m_Children: []
   m_Father: {fileID: 0}

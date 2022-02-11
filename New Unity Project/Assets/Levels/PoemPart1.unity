@@ -980,7 +980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iLevelToLoad: 2
-  sLevelToLoad: Level2
+  sLevelToLoad: PoemPart2
   useIntegerToLoadLevel: 1
 --- !u!61 &1057976088
 BoxCollider2D:
