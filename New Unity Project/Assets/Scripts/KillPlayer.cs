@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class KillPlayer: MonoBehaviour
 {
+    private GameMaster gm;
     public int Respawn;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
 
     // Update is called once per frame
@@ -23,7 +24,8 @@ public class KillPlayer: MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(Respawn);
+            gm.lastCheckPointpos = transform.position;
+            //SceneManager.LoadScene(Respawn);
         }
     }
 }

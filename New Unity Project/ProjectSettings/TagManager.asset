@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - StartPos
+  - GM
   layers:
   - Default
   - TransparentFX
