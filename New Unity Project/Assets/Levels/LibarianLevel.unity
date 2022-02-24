@@ -2623,7 +2623,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Hello young shadow
-  dialogueLines: []
+  dialogueLines:
+  - Hello I the librarian of this tower
+  - The Tower that leads to the pretty sky
+  - Nice meeting you
+  - Bye
 --- !u!61 &628889641
 BoxCollider2D:
   m_ObjectHideFlags: 0
