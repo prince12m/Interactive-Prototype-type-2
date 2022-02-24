@@ -6,6 +6,10 @@ public class DialogueHolder : MonoBehaviour
 {
     public string dialogue;
     private DialogueManager dMan;
+
+    public string[] dialogueLines;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +28,15 @@ public class DialogueHolder : MonoBehaviour
         {
             if(Input.GetKeyUp(KeyCode.C))
             {
-                dMan.ShowBox(dialogue);
+                //dMan.ShowBox(dialogue);
+
+                if(!dMan.dialogueActive)
+                {
+                    dMan.dialogueLines = dialogueLines;
+                    dMan.currentLine = 0;
+                    dMan.ShowDialogue();
+
+                }
             }
         }
     }
